@@ -8,10 +8,15 @@ restaurant_square = Restaurant("square", "Gourmet")
 drink_juice = Drink("Watermelon Juice", 5.0, "big")
 dish_bread = Dish("Bread", 2.0, "The best bread in the city")
 
+drink_juice.discount()
+dish_bread.discount()
+
+restaurant_square.menu_add(drink_juice)
+restaurant_square.menu_add(dish_bread)
+
 
 def main():
-    print(drink_juice)
-    print(dish_bread)
+    restaurant_square.display_menu
 
 
 if __name__ == "__main__":
